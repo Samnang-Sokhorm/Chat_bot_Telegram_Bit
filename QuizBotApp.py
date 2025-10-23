@@ -480,7 +480,7 @@ class QuizEditor(QWidget):
         self.load_questions_file()
 
         self.signals = BotSignals()
-        self.telegram_bot = TelegramQuizBot(token="8195075822:AAFhdp82cYfe5Kem8PDNd8bEuaX6M2GBXM0", 
+        self.telegram_bot = TelegramQuizBot(token="", 
                                            questions_file=self.questions_file, 
                                            signals=self.signals)
 
@@ -719,4 +719,5 @@ if __name__ == "__main__":
     app.setFont(QFont(KHMER_FONT, FONT_SIZE))
     editor = QuizEditor()
     editor.show()
+
     sys.exit(app.exec_())
